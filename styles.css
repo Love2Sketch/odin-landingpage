@@ -1,26 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
-}
-
-h1, h2, h3 {
-    font-family: "Shrikhand", serif;
-}
-
-p.baby {
-    font-family: "Oooh baby", serif;
-    font-size: 20px;
-    color: white;
-}
-
-p.mont {
-    font-family: "Montserrat", serif;
-    font-size: 20px;
-    color: white;
 }
 
 body {
@@ -29,45 +12,24 @@ body {
     margin: 0px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    background: rgb(1, 34, 26);
-    padding: 20px 200px;
-    gap: 30px;
-}
-
-.logo {
-    display: flex;
-    gap: 20px;
-    color: white;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-    color: white;
-    font-size: 15px;
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    align-items: center;
-}
-
-.top {
-    padding:  30px 200px 50px;
-    background: rgb(16, 66, 41);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.top h1 {
-    color: white;
+h1, h2, h3 {
     font-family: "Shrikhand", serif;
-    font-size: 40px;
+    color: white;
+}
 
+a {
+    font-family: "Montserrat", serif;
+    color: white;
+    font-size: 16px;
+}
+
+p {
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+div {
+    display: flex;
 }
 
 button {
@@ -79,101 +41,136 @@ button {
     font-weight: 600;
     color: white;
     background: rgb(1, 34, 26);
-
-}
-
-.infoboxes {
-    text-align: center;
-    font-family: "montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 20px;
-}
-
-.infoboxes h2 {
-    text-align: center;
-    font-size: 30px;
-    color: rgb(1, 34, 26);
 }
 
 
-.boxes {
-    padding: 30px 200px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    flex: auto;
+.header {
+    justify-content: space-between;
+    background: rgb(1, 34, 26);
+    padding: 20px 200px;
     gap: 30px;
 }
 
-.imgbox img {
-    border: 3px solid rgb(186, 212, 138);
-    width: 200px;
-    border-radius: 10px;
+    .logo, .menu {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .menu {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+.top {
+    padding:  30px 200px 50px;
+    background: rgb(16, 66, 41);
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.imgbox p {
-    max-width: 206px;
+    .toptext {
+        display: block;
+    }
+
+        .top h1 {
+            font-size: 40px;
+        }
+
+        .subtext {
+            font-size: 20px;
+        }
+
+
+.infoboxes {
+    display: block;
     text-align: center;
-
+    padding: 20px;
 }
+
+    .infoboxes h2 {
+        font-size: 30px;
+        color: rgb(1, 34, 26);
+    }
+
+    .boxes {
+        padding: 30px 200px;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+        .imgbox {
+            display: block;
+        }
+
+            .imgbox img {
+                border: 3px solid rgb(186, 212, 138);
+                width: 200px;
+                border-radius: 10px;
+            }
+
+            .imgbox p {
+                max-width: 206px;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+            }
 
 .quote {
     padding: 70px 200px;
-    display: flex;
     flex-direction: column;
     gap: 12px;
     background: rgb( 240 240 240);
+}
+    .quotepara {
+        font-size: 30px;
+        font-style: italic;
+        align-self: flex-start;
+        color: black;
+    }
 
-}
-.quotepara {
-    font-family:"montserrat", sans-serif;
-    font-size: 30px;
-    font-style: italic;
-    align-self: flex-start;
-}
-
-.attr {
-    font-family:"montserrat", sans-serif;
-    font-weight: bold;
-    align-self: flex-end;
-    font-size: 20px;
-    padding-right: 90px;
-}
+    .attr {
+        font-weight: bold;
+        align-self: flex-end;
+        font-size: 20px;
+        padding-right: 90px;
+        color: black;
+    }
 
 .cta {
     margin: 50px 200px;
     padding: 20px 40px;
     border-radius: 10px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background:rgb(16, 66, 41);
     color: white;
 }
 
-.cta h3 {
-    font-size: 25px;
-}
+    .ctaright {
+        display: block;
+    }
 
-.regtext {
-    font-family:"montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-}
+        .cta h3 {
+            font-size: 25px;
+        }
 
-.smalltext {
-    font-family:"montserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-}
+        .regtext {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .smalltext {
+            font-size: 12px;
+            font-weight: 400;
+        }
 
 .footer {
+    display: block;
     padding: 20px 200px;
     background: rgb(1, 34, 26);
-    font-family:"montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    color: white;
 }
